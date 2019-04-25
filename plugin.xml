@@ -16,6 +16,6 @@
         <config-file parent="/*" target="AndroidManifest.xml"></config-file>
         <source-file src="src/android/RongIMKit.java" target-dir="src/com/ice/plugin/rongimkit/RongIMKit" />
         <source-file src="src/android/RongCloudKitUtils.java" target-dir="src/com/ice/plugin/rongimkit/RongCloudKitUtils" />
-        <framework src="com.ice.lib:rongimlibrary:1.0.0" />
+        <framework src="src/android/android-build.gradle" custom="true" type="gradleReference"/>
     </platform>
 </plugin>
