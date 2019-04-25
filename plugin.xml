@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.ice.plugin.rongimkit" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>RongIMKit</name>
+    <js-module name="RongIMKit" src="www/RongIMKit.js">
+        <clobbers target="cordova.plugins.RongIMKit" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="RongIMKit">
+                <param name="android-package" value="com.ice.plugin.rongimkit.RongIMKit" />
+            </feature>
+            <feature name="RongCloudKitUtils">
+                <param name="android-package" value="com.ice.plugin.rongimkit.RongCloudKitUtils" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/RongIMKit.java" target-dir="src/com/ice/plugin/rongimkit/RongIMKit" />
+        <source-file src="src/android/RongCloudKitUtils.java" target-dir="src/com/ice/plugin/rongimkit/RongCloudKitUtils" />
+        <framework src="com.ice.lib:rongimlibrary:1.0.0" />
+    </platform>
+</plugin>
