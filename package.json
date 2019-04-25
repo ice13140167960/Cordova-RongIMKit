@@ -1,0 +1,25 @@
+{
+  "name": "com.ice.plugin.rongimkit",
+  "version": "1.0.0",
+  "description": "",
+  "cordova": {
+    "id": "com.ice.plugin.rongimkit",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ice13140167960/Cordova-RongIMKit.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "ice",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ice13140167960/Cordova-RongIMKit/issues"
+  },
+  "homepage": "https://github.com/ice13140167960/Cordova-RongIMKit#readme"
+}
