@@ -21,7 +21,7 @@ public class RongIMKit extends CordovaPlugin {
             return true;
         }else if(action.equals("startOneConversation")){
             JSONObject jsonObject= args.getJSONObject(0);
-            RongCloudKitUtils.startManyConversation(cordova.getActivity(),jsonObject.getString("token") ,
+            RongCloudKitUtils.startOneConversation(cordova.getActivity(),jsonObject.getString("token") ,
              jsonObject.getString("targetId"),
               jsonObject.getString("userName"));
         }else if(action.equals("startManyConversation")){
